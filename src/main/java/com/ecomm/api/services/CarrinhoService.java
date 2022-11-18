@@ -17,4 +17,10 @@ public class CarrinhoService {
 	public List<Carrinho> findAll() {
 		return repository.findAll();
 	}
+	
+	
+	public List<Carrinho> findFavoritos(Integer id) {
+		
+		return repository.buscaFavoritos(id);
+	}
 }
